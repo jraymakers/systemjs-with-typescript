@@ -1,0 +1,15 @@
+{
+  "compilerOptions": {
+    "declaration": true,
+    "module": "system",
+    "noImplicitAny": true,
+    "noImplicitUseStrict": true,
+    "outFile": "../dist/lib.js",
+    "preserveConstEnums": true,
+    "removeComments": true,
+    "target": "es5"
+  },
+  "files": [
+    "./lib.ts"
+  ]
+}

@@ -1,0 +1,24 @@
+{
+  "name": "systemjs-with-typescript",
+  "version": "1.0.0",
+  "licence": "ISC",
+  "dependencies": {
+    "systemjs": "^0.19.24"
+  },
+  "devDependencies": {
+    "http-server": "^0.9.0",
+    "typescript": "^1.8.9",
+    "typings": "^0.7.9"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jraymakers/systemjs-with-typescript.git"
+  },
+  "scripts": {
+    "build": "npm run buildLib && npm run buildApp",
+    "buildLib": "tsc -p lib",
+    "buildApp": "tsc -p app && cp app/app.html dist/ && cp node_modules/systemjs/dist/* dist/",
+    "clean": "rm -r dist",
+    "start": "http-server"
+  }
+}
